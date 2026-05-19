@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erik An</title>
+<meta name="description" content="Erik An — Mathematics and Data Science, University of Vienna. Brain-computer interfaces, computational neuroscience, philosophy of mind.">
+<meta name="author" content="Erik An">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Erik An">
+<meta property="og:description" content="Mathematics and Data Science, University of Vienna. Brain-computer interfaces, computational neuroscience, philosophy of mind.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://erik-an.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #fdfcf8;
+    --text: #1a1a1a;
+    --text-muted: #6b6b6b;
+    --rule: #d8d4c8;
+    --link-underline: rgba(26, 26, 26, 0.35);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1a;
+      --text: #e8e4d8;
+      --text-muted: #9a958a;
+      --rule: #3a3a38;
+      --link-underline: rgba(232, 228, 216, 0.35);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    font-size: 19px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  main {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 5rem 1.75rem 4rem;
+  }
+
+  header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid var(--rule);
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem;
+    letter-spacing: -0.015em;
+  }
+
+  .subtitle {
+    font-style: italic;
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin: 0 0 0.75rem;
+    font-style: italic;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .bio ul {
+    padding-left: 1.25rem;
+    list-style: disc;
+  }
+
+  .bio li {
+    margin-bottom: 0.35rem;
+  }
+
+  .links li {
+    margin-bottom: 0.25rem;
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--link-underline);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 0.5px;
+    transition: text-decoration-color 0.15s ease;
+  }
+
+  a:hover {
+    text-decoration-color: var(--text);
+  }
+
+  .email {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 0.5px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<main>
+
+  <header>
+    <h1>Erik An</h1>
+    <p class="subtitle">Mathematics and Data Science, University of Vienna</p>
+  </header>
+
+  <section class="bio">
+    <p>I study mathematics and data science with the long-term aim of working on brain-to-brain interfaces. My technical work sits between signal processing, machine learning, and computational neuroscience; my philosophical work concerns intersubjectivity and materialism.</p>
+    <p>Before Vienna I completed the core curriculum at 42 School and am continuing the Advanced track in parallel.</p>
+  </section>
+
+  <section class="bio">
+    <h2>currently</h2>
+    <ul>
+      <li>Building a motor imagery BCI pipeline on the PhysioNet EEG dataset</li>
+      <li>Reading Brassier and Meillassoux toward an essay on materialism</li>
+      <li>Preparing for master's applications in computational neuroscience</li>
+    </ul>
+  </section>
+
+  <section class="links">
+    <h2>elsewhere</h2>
+    <ul>
+      <li><a href="/cv">Curriculum vitae</a></li>
+      <li><a href="/tpv">Total Perspective Vortex &mdash; BCI project</a></li>
+      <li><a href="/notes">Notes and writing</a></li>
+      <li><a href="https://github.com/ziro2173">GitHub</a></li>
+    </ul>
+    <p class="email">an@erik-an.com</p>
+  </section>
+
+  <footer>
+    Vienna
+  </footer>
+
+</main>
+
+</body>
+</html>
