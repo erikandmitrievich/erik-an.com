@@ -4,14 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Erik An</title>
-<meta name="description" content="Erik An — Mathematics and Data Science, University of Vienna. Brain-computer interfaces, computational neuroscience, philosophy of mind.">
+<meta name="description" content="Erik An — Mathematics and Data Science, University of Vienna. Brain-computer interfaces, computational neuroscience, and signal processing.">
 <meta name="author" content="Erik An">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Erik An">
-<meta property="og:description" content="Mathematics and Data Science, University of Vienna. Brain-computer interfaces, computational neuroscience, philosophy of mind.">
+<meta property="og:description" content="Mathematics and Data Science, University of Vienna. Brain-computer interfaces, computational neuroscience, and signal processing.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://erik-an.com">
+<!-- TODO: add an og:image (1200x630) so link previews aren't bare, and a favicon -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -104,13 +105,28 @@
     list-style: none;
   }
 
-  .bio ul {
-    padding-left: 1.25rem;
-    list-style: disc;
+  .entries li {
+    margin-bottom: 1rem;
   }
 
-  .bio li {
-    margin-bottom: 0.35rem;
+  .entries li:last-child {
+    margin-bottom: 0;
+  }
+
+  .entry-name {
+    font-weight: 500;
+  }
+
+  .entry-meta {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  .entry-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0.15rem 0 0;
   }
 
   .links li {
@@ -137,6 +153,11 @@
     margin-top: 0.75rem;
   }
 
+  .email a {
+    color: inherit;
+    font-family: inherit;
+  }
+
   footer {
     margin-top: 4rem;
     padding-top: 1.5rem;
@@ -157,8 +178,57 @@
   </header>
 
   <section class="bio">
-    <p>I study mathematics and data science with the long-term aim of working on brain-to-brain interfaces. My technical work sits between signal processing, machine learning, and computational neuroscience.</p>
-    <p>Before Vienna I completed the core curriculum at 42 School and am continuing the Advanced track in parallel.</p>
+    <p>I study mathematics and data science at the University of Vienna. My technical work sits between signal processing, machine learning, and computational neuroscience, working toward brain–computer interfaces.</p>
+    <p>Before Vienna I completed the 42 Core Curriculum and am continuing the 42 Advanced track in parallel, with a specialization in data science.</p>
+  </section>
+
+  <section class="entries">
+    <h2>education</h2>
+    <ul>
+      <li>
+        <span class="entry-name">University of Vienna</span> &middot; <span class="entry-meta">2025 — present</span>
+        <p class="entry-desc">Bachelor in Mathematics. Probability, statistics, linear algebra, analysis, and computational methods.</p>
+      </li>
+      <li>
+        <span class="entry-name">42 Vienna — Advanced</span> &middot; <span class="entry-meta">2025 — present</span>
+        <p class="entry-desc">Data science specialization, ongoing.</p>
+      </li>
+      <li>
+        <span class="entry-name">42 Wolfsburg — Core Curriculum</span> &middot; <span class="entry-meta">2024 — 2025</span>
+        <p class="entry-desc">Software engineering. Completed in one year, among the first in the cohort to finish.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="entries">
+    <h2>selected work</h2>
+    <ul>
+      <li>
+        <span class="entry-name"><a href="https://github.com/obluda2173/mfds">mfds</a></span>
+        <p class="entry-desc">An open, plain-text workspace for the Mathematics and Data Science degree — lecture notes, problem sets, and mock exams, with executable Julia, Python, and C++.</p>
+      </li>
+      <li>
+        <span class="entry-name"><a href="https://github.com/obluda2173/transcendence">transcendence</a></span>
+        <p class="entry-desc">A real-time multiplayer web application — microservice backend, live gameplay, single-player AI opponent.</p>
+      </li>
+      <li>
+        <span class="entry-name"><a href="https://github.com/obluda2173/webserv">webserv</a></span>
+        <p class="entry-desc">An HTTP server in C++ — request parsing, CGI, non-blocking I/O, connection management.</p>
+      </li>
+      <li>
+        <span class="entry-name"><a href="https://github.com/obluda2173/minishell">minishell</a></span>
+        <p class="entry-desc">A Unix shell in C — lexer, parser, pipes, redirections, environment handling, builtins.</p>
+      </li>
+      <li>
+        <span class="entry-name"><a href="https://github.com/obluda2173/ft_linear_regression">ft_linear_regression</a></span>
+        <p class="entry-desc">Linear regression from scratch in C++ — gradient descent, feature normalization, model evaluation.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>tools</h2>
+    <p>Julia, C/C++, JavaScript, SQL. Docker, Git, Emacs.</p>
   </section>
 
   <section class="links">
@@ -166,7 +236,7 @@
     <ul>
       <li><a href="https://github.com/obluda2173">GitHub</a></li>
     </ul>
-    <p class="email">an@erik-an.com</p>
+    <p class="email"><a href="mailto:obluda2173@gmail.com">obluda2173@gmail.com</a></p>
   </section>
 
   <footer>
