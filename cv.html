@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erik An — CV</title>
+<meta name="description" content="Curriculum vitae of Erik An — Mathematics and Data Science, University of Vienna.">
+<meta name="author" content="Erik An">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Erik An — CV">
+<meta property="og:description" content="Curriculum vitae — Mathematics and Data Science, University of Vienna.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://erik-an.com/cv">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #fdfcf8;
+    --text: #1a1a1a;
+    --text-muted: #6b6b6b;
+    --rule: #d8d4c8;
+    --link-underline: rgba(26, 26, 26, 0.35);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1a;
+      --text: #e8e4d8;
+      --text-muted: #9a958a;
+      --rule: #3a3a38;
+      --link-underline: rgba(232, 228, 216, 0.35);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    font-size: 19px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  main {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 5rem 1.75rem 4rem;
+  }
+
+  .nav {
+    font-size: 0.85rem;
+    margin: 0 0 1.75rem;
+  }
+
+  .nav a {
+    color: var(--text-muted);
+  }
+
+  header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid var(--rule);
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem;
+    letter-spacing: -0.015em;
+  }
+
+  .subtitle {
+    font-style: italic;
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .contact {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin: 1rem 0 0;
+    line-height: 1.95;
+  }
+
+  .contact a {
+    color: inherit;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin: 0 0 0.75rem;
+    font-style: italic;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .entries li {
+    margin-bottom: 1.25rem;
+  }
+
+  .entries li:last-child {
+    margin-bottom: 0;
+  }
+
+  .entry-name {
+    font-weight: 500;
+  }
+
+  .entry-meta {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  .entry-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0.15rem 0 0;
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--link-underline);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 0.5px;
+    transition: text-decoration-color 0.15s ease;
+  }
+
+  a:hover {
+    text-decoration-color: var(--text);
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 0.5px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  /* Print: force light theme, drop screen-only chrome, tighten for paper.
+     Placed last so it overrides the dark-mode block when printing. */
+  @media print {
+    :root {
+      --bg: #fff;
+      --text: #000;
+      --text-muted: #3a3a3a;
+      --rule: #cccccc;
+      --link-underline: #999999;
+    }
+    @page { margin: 1.8cm; }
+    html, body { font-size: 10.5pt; line-height: 1.45; }
+    main { max-width: none; margin: 0; padding: 0; }
+    .nav, .pdf-link { display: none; }
+    header { margin-bottom: 1.5rem; padding-bottom: 1rem; }
+    section { margin-bottom: 1.3rem; }
+    .entries li { margin-bottom: 0.9rem; }
+    h1 { font-size: 19pt; }
+    a { color: var(--text); text-decoration: none; }
+    footer { margin-top: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<main>
+
+  <p class="nav"><a href="index.html">&larr; erik-an.com</a></p>
+
+  <header>
+    <h1>Erik An</h1>
+    <p class="subtitle">Mathematics and Data Science, University of Vienna</p>
+    <p class="contact">Vienna &nbsp;&middot;&nbsp; <a href="mailto:obluda2173@gmail.com">obluda2173@gmail.com</a> &nbsp;&middot;&nbsp; <a href="https://github.com/obluda2173">github.com/obluda2173</a><span class="pdf-link"> &nbsp;&middot;&nbsp; <a href="cv.pdf">Download PDF</a></span></p>
+  </header>
+
+  <section>
+    <h2>profile</h2>
+    <p>Mathematics and data science student at the University of Vienna, with a software-engineering background from the 42 Core Curriculum, completed in one year — far ahead of the median pace. My technical work sits between signal processing, machine learning, and computational neuroscience, with the aim of working on brain–computer interfaces. I am drawn to complex, large-scale systems.</p>
+  </section>
+
+  <section class="entries">
+    <h2>education</h2>
+    <ul>
+      <li>
+        <span class="entry-name">University of Vienna</span> &middot; <span class="entry-meta">2025 — present</span>
+        <p class="entry-desc">BSc Mathematics. Probability, statistics, linear algebra, analysis, and computational methods.</p>
+      </li>
+      <li>
+        <span class="entry-name">42 Vienna — Advanced</span> &middot; <span class="entry-meta">2025 — present</span>
+        <p class="entry-desc">Data science specialization. Ongoing.</p>
+      </li>
+      <li>
+        <span class="entry-name">42 Wolfsburg — Core Curriculum</span> &middot; <span class="entry-meta">2024 — 2025</span>
+        <p class="entry-desc">Software engineering. Completed in one year, among the first in the cohort to finish.</p>
+      </li>
+      <li>
+        <span class="entry-name">British High School — Jávea, Spain</span> &middot; <span class="entry-meta">2023 — 2024</span>
+        <p class="entry-desc">A-Levels in Mathematics, Physics, and History.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="entries">
+    <h2>projects</h2>
+    <ul>
+      <li>
+        <span class="entry-name">transcendence</span> &middot; <span class="entry-meta">full-stack real-time web app</span>
+        <p class="entry-desc">Worked across backend, frontend, and database layers to build a real-time multiplayer Pong platform. Implemented user management, microservice communication, and an AI opponent for single-player mode. Contributed to core application logic, client–server flows, and overall system structure.</p>
+      </li>
+      <li>
+        <span class="entry-name">webserv</span> &middot; <span class="entry-meta">HTTP server in C++</span>
+        <p class="entry-desc">Implemented HTTP parsing, response generation, CGI handling, and redirections, alongside major parts of the system architecture. Worked with low-level TCP/IP, non-blocking I/O, and connection management. Acted as the technical bridge within the team, with emphasis on clean OOP design and robust testing.</p>
+      </li>
+      <li>
+        <span class="entry-name">minishell</span> &middot; <span class="entry-meta">Unix shell in C</span>
+        <p class="entry-desc">Implemented core shell components — lexical analysis, parsing, piping, redirections, environment variable management, and builtin commands. Designed and ran unit tests for correctness across the execution flow, on a clean and maintainable architecture aligned with standard shell behaviour.</p>
+      </li>
+      <li>
+        <span class="entry-name">minirt</span> &middot; <span class="entry-meta">ray tracer in C</span>
+        <p class="entry-desc">A basic ray-tracing engine with vector math, lighting models, and scene parsing.</p>
+      </li>
+      <li>
+        <span class="entry-name">philosophers</span> &middot; <span class="entry-meta">concurrency in C</span>
+        <p class="entry-desc">The dining philosophers problem implemented with threads and processes, using mutexes to avoid deadlock and starvation.</p>
+      </li>
+      <li>
+        <span class="entry-name">born2beroot</span> &middot; <span class="entry-meta">system administration</span>
+        <p class="entry-desc">A hardened Linux VM — strict permissions, SSH configuration, firewall rules, and user management.</p>
+      </li>
+      <li>
+        <span class="entry-name">ft_linear_regression</span> &middot; <span class="entry-meta">machine learning in C++</span>
+        <p class="entry-desc">Linear regression from scratch — gradient descent, data normalization, and model evaluation.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>skills</h2>
+    <p>Languages — Julia, C/C++, JavaScript, SQL.<br>
+       Tools — Docker, Git, Emacs.</p>
+  </section>
+
+  <footer>
+    Last updated May 2026
+  </footer>
+
+</main>
+
+</body>
+</html>
