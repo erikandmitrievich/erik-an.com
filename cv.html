@@ -23,7 +23,8 @@
   /* Palette: black #000000, white #EFEEEA, orange #FE7743, blue #273F4F.
      Dark is the default; light mode is the same four values inverted.
      Blue is unreadable as text on black (1.9:1), so on dark it does
-     structural work only — rules and hairlines. Orange carries the accent. */
+     structural work only — rules and hairlines. Orange carries the accent:
+     links are undecorated and signal only on hover and focus. */
   :root {
     color-scheme: dark light;
     --bg: #000000;
@@ -31,7 +32,6 @@
     --text-muted: #8C8B87;
     --rule: #273F4F;
     --accent: #FE7743;
-    --link-underline: rgba(239, 238, 234, 0.28);
     --selection-bg: rgba(254, 119, 67, 0.28);
   }
 
@@ -42,7 +42,6 @@
       --text-muted: #273F4F;
       --rule: rgba(39, 63, 79, 0.28);
       --accent: #FE7743;
-      --link-underline: rgba(39, 63, 79, 0.35);
       --selection-bg: rgba(254, 119, 67, 0.30);
     }
   }
@@ -111,6 +110,12 @@
     color: inherit;
   }
 
+  /* The contact line reads "Email" on screen; print swaps in the address,
+     since a printed CV with no reachable address is a broken document. */
+  .on-paper {
+    display: none;
+  }
+
   section {
     margin-bottom: 2.5rem;
   }
@@ -163,22 +168,17 @@
 
   a {
     color: var(--text);
-    text-decoration: underline;
-    text-decoration-color: var(--link-underline);
-    text-underline-offset: 4px;
-    text-decoration-thickness: 0.5px;
-    transition: text-decoration-color 0.15s ease;
+    text-decoration: none;
+    transition: color 0.15s ease;
   }
 
   a:hover {
     color: var(--accent);
-    text-decoration-color: var(--accent);
   }
 
   a:focus-visible {
     outline: 1.5px solid var(--accent);
     outline-offset: 3px;
-    text-decoration-color: transparent;
   }
 
   footer {
@@ -197,12 +197,13 @@
       --text: #000;
       --text-muted: #3a3a3a;
       --rule: #cccccc;
-      --link-underline: #999999;
     }
     @page { margin: 1.8cm; }
     html, body { font-size: 10.5pt; line-height: 1.45; }
     main { max-width: none; margin: 0; padding: 0; }
     .nav, .pdf-link { display: none; }
+    .on-screen { display: none; }
+    .on-paper { display: inline; }
     header { margin-bottom: 1.5rem; padding-bottom: 1rem; }
     section { margin-bottom: 1.3rem; }
     .entries li { margin-bottom: 0.9rem; }
@@ -224,7 +225,7 @@
     <p class="contact">
       <a href="https://github.com/erikandmitrievich">GitHub</a> &nbsp;&middot;&nbsp;
       <a href="https://www.linkedin.com/in/erik-an/">LinkedIn</a> &nbsp;&middot;&nbsp;
-      <a href="mailto:erikandmitrievich@gmail.com">erikandmitrievich@gmail.com</a>
+      <a href="mailto:erikandmitrievich@gmail.com"><span class="on-screen">Email</span><span class="on-paper">erikandmitrievich@gmail.com</span></a>
     </p>
   </header>
 
@@ -265,7 +266,7 @@
 
       <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/total_perspective_vortex">total_perspective_vortex</a></span> &middot; <span class="entry-meta">EEG motor-imagery classification</span>
-        <p class="entry-desc">"Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; the derivation sits beside the implementation, and the features are checked against mne.decoding.CSP. 0.63 mean held-out accuracy over 109 subjects and six binary task groups."</p>
+        <p class="entry-desc">Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; the derivation sits beside the implementation, and the features are checked against mne.decoding.CSP. 0.63 mean held-out accuracy over 109 subjects and six binary task groups.</p>
       </li>
       <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/transcendence">transcendence</a></span> &middot; <span class="entry-meta">full-stack real-time web app</span>

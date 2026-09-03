@@ -18,13 +18,14 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
   /* Palette: black #000000, white #EFEEEA, orange #FE7743, blue #273F4F.
      Dark is the default; light mode is the same four values inverted.
      Blue is unreadable as text on black (1.9:1), so on dark it does
-     structural work only — rules and hairlines. Orange carries the accent. */
+     structural work only — rules and hairlines. Orange carries the accent:
+     links are undecorated and signal only on hover and focus. */
   :root {
     color-scheme: dark light;
     --bg: #000000;
@@ -32,7 +33,6 @@
     --text-muted: #8C8B87;
     --rule: #273F4F;
     --accent: #FE7743;
-    --link-underline: rgba(239, 238, 234, 0.28);
     --selection-bg: rgba(254, 119, 67, 0.28);
   }
 
@@ -43,7 +43,6 @@
       --text-muted: #273F4F;
       --rule: rgba(39, 63, 79, 0.28);
       --accent: #FE7743;
-      --link-underline: rgba(39, 63, 79, 0.35);
       --selection-bg: rgba(254, 119, 67, 0.30);
     }
   }
@@ -147,35 +146,19 @@
 
   a {
     color: var(--text);
-    text-decoration: underline;
-    text-decoration-color: var(--link-underline);
-    text-underline-offset: 4px;
-    text-decoration-thickness: 0.5px;
-    transition: text-decoration-color 0.15s ease;
+    text-decoration: none;
+    transition: color 0.15s ease;
   }
 
   a:hover {
     color: var(--accent);
-    text-decoration-color: var(--accent);
   }
 
   a:focus-visible {
     outline: 1.5px solid var(--accent);
     outline-offset: 3px;
-    text-decoration-color: transparent;
   }
 
-  .email {
-    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    margin-top: 0.75rem;
-  }
-
-  .email a {
-    color: inherit;
-    font-family: inherit;
-  }
 </style>
 </head>
 <body>
@@ -240,7 +223,8 @@
     <ul>
       <li><a href="https://github.com/erikandmitrievich">GitHub</a></li>
       <li><a href="cv.html">CV</a></li>
-      <li><a href="mailto:erikandmitrievich@gmail.com">erikandmitrievich@gmail.com</a></li>
+      <li><a href="mailto:erikandmitrievich@gmail.com">Email</a></li>
+    </ul>
   </section>
 
 </main>
