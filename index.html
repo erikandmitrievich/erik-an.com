@@ -18,7 +18,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 
 <style>
   /* Palette: black #000000, white #EFEEEA, orange #FE7743, blue #273F4F.
@@ -86,7 +86,6 @@
   }
 
   .subtitle {
-    font-style: italic;
     color: var(--text-muted);
     margin: 0;
     font-size: 1.05rem;
@@ -103,7 +102,6 @@
     letter-spacing: 0.05em;
     color: var(--text-muted);
     margin: 0 0 0.75rem;
-    font-style: italic;
   }
 
   p {
@@ -135,7 +133,6 @@
   .entry-meta {
     color: var(--text-muted);
     font-size: 0.9rem;
-    font-style: italic;
   }
 
   .entry-desc {
@@ -179,15 +176,6 @@
     color: inherit;
     font-family: inherit;
   }
-
-  footer {
-    margin-top: 4rem;
-    padding-top: 1.5rem;
-    border-top: 0.5px solid var(--rule);
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-style: italic;
-  }
 </style>
 </head>
 <body>
@@ -200,23 +188,15 @@
   </header>
 
   <section class="bio">
-    <p>I'm building toward brain-computer interfaces — which is why I'm doing
-    a mathematics degree first. Signal, inference, and the math underneath them
-    before the application.</p>
-    <p>I work in plain text and build my own tooling: Org-mode, LaTeX, Emacs.
-    Before Vienna I completed the 42 Core Curriculum; I'm continuing the 42
-    Advanced track in data science in parallel.</p>
+    <p>Software engineering background; moving through mathematics toward computational neuroscience and brain-computer interfaces.</p>
   </section>
 
   <section class="entries">
-    <h2>what i'm working on</h2>
+    <h2>ongoing</h2>
     <ul>
       <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/mfds">mfds</a></span>
-        <p class="entry-desc">A version-controlled, executable knowledge base for a mathematics degree —
-        lecture notes, proofs, and problem sets in Org-mode and LaTeX with embedded
-        Julia, Python, and C++. Built a prompt specification system with defined
-        input/output contracts. As of May 2026, ~260k words, 18,000+ LaTeX fragments.</p>
+        <p class="entry-desc">Study repository for my BSc. Emacs and Org-mode throughout, Python and Julia for tooling and coursework; lecture notes, problem sets and exam preparation in LaTeX. The directory layout is a written spec with a validator, run as a pre-commit hook; sources and generated products are strictly separated. LLMs through the API handle extraction and aggregation at volume, never the mathematics.</p>
       </li>
     </ul>
   </section>
@@ -224,6 +204,18 @@
   <section class="entries">
     <h2>selected work</h2>
     <ul>
+
+      <li>
+        <span class="entry-name"><a href="https://github.com/erikandmitrievich/total_perspective_vortex">total_perspective_vortex</a></span>
+        <p class="entry-desc">Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; the derivation sits beside the implementation, and the features are checked against mne.decoding.CSP. 0.63 mean held-out accuracy over 109 subjects and six binary task groups.</p>
+      </li>
+
+      <li>
+        <span class="entry-name"><a href="https://github.com/erikandmitrievich/transcendence">transcendence</a></span>
+        <p class="entry-desc">A browser Pong platform: local play, tournaments, and an AI opponent constrained to see the board once per second, so it predicts where the ball will arrive instead of following it. Full stack, TypeScript throughout; Fastify microservices behind a hand-written SPA with no frontend framework. Team of three, final project of the 42 Common Core.</p>
+      </li>
+
+      <!-- Removed per TODO. Restore by uncommenting.
       <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/AudioPrint">AudioPrint</a></span>
         <p class="entry-desc">A Shazam-style audio identification engine — spectrogram
@@ -238,13 +230,8 @@
         block processing, quantization, and inverse reconstruction. Self-directed, to
         internalize the DCT covered in Linear Algebra.</p>
       </li>
-      <li>
-        <span class="entry-name"><a href="https://github.com/erikandmitrievich/transcendence">transcendence</a></span>
-        <p class="entry-desc">A real-time multiplayer Pong platform — microservice
-        backend (Fastify/SQLite), TypeScript frontend, remote multiplayer, and a
-        single-player AI opponent with constrained perception. Team project, deployed
-        via Docker.</p>
-      </li>
+      -->
+
     </ul>
   </section>
 
@@ -253,13 +240,8 @@
     <ul>
       <li><a href="https://github.com/erikandmitrievich">GitHub</a></li>
       <li><a href="cv.html">CV</a></li>
-    </ul>
-    <p class="email"><a href="mailto:erikandmitrievich@gmail.com">erikandmitrievich@gmail.com</a></p>
+      <li><a href="mailto:erikandmitrievich@gmail.com">erikandmitrievich@gmail.com</a></li>
   </section>
-
-  <footer>
-    Vienna
-  </footer>
 
 </main>
 

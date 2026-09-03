@@ -17,7 +17,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 
 <style>
   /* Palette: black #000000, white #EFEEEA, orange #FE7743, blue #273F4F.
@@ -94,7 +94,6 @@
   }
 
   .subtitle {
-    font-style: italic;
     color: var(--text-muted);
     margin: 0;
     font-size: 1.05rem;
@@ -123,7 +122,6 @@
     letter-spacing: 0.05em;
     color: var(--text-muted);
     margin: 0 0 0.75rem;
-    font-style: italic;
   }
 
   p {
@@ -155,7 +153,6 @@
   .entry-meta {
     color: var(--text-muted);
     font-size: 0.9rem;
-    font-style: italic;
   }
 
   .entry-desc {
@@ -190,7 +187,6 @@
     border-top: 0.5px solid var(--rule);
     font-size: 0.85rem;
     color: var(--text-muted);
-    font-style: italic;
   }
 
   /* Print: force light theme, drop screen-only chrome, tighten for paper.
@@ -234,7 +230,7 @@
 
   <section>
     <h2>profile</h2>
-    <p>Mathematics and data science student at the University of Vienna, with a software-engineering background from the 42 Core Curriculum, completed in 10 months — far ahead of the median pace. My technical work sits between signal processing, machine learning, and computational neuroscience, with the aim of working on brain-computer interfaces.</p>
+    <p>Mathematics and data science student at the University of Vienna, with a software-engineering background from the 42 Core Curriculum, completed in 10 months: far ahead of the median pace. My technical work sits between signal processing, machine learning, and computational neuroscience, with the aim of working on brain-computer interfaces. Conventions I hold to: one canonical layout per project type, names that survive grep, math documented beside the code that implements it.</p>
   </section>
 
   <section class="entries">
@@ -264,42 +260,37 @@
     <ul>
       <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/mfds">mfds</a></span> &middot; <span class="entry-meta">executable knowledge base</span>
-        <p class="entry-desc">A version-controlled, executable knowledge base for a mathematics degree —
-        lecture notes, proofs, and problem sets in Org-mode and LaTeX with embedded
-        Julia, Python, and C++. Built a prompt specification system with defined
-        input/output contracts. As of May 2026, ~260k words, 18,000+ LaTeX fragments.</p>
+        <p class="entry-desc">Study repository for my BSc. Emacs and Org-mode throughout, Python and Julia for tooling and coursework; lecture notes, problem sets and exam preparation in LaTeX. The directory layout is a written spec with a validator, run as a pre-commit hook; sources and generated products are strictly separated. LLMs through the API handle extraction and aggregation at volume, never the mathematics.</p>
       </li>
+
       <li>
-        <span class="entry-name"><a href="https://github.com/erikandmitrievich/AudioPrint">AudioPrint</a></span> &middot; <span class="entry-meta">audio fingerprinting in Julia</span>
-        <p class="entry-desc">A Shazam-style audio identification engine — spectrogram
-        analysis, spectral peak extraction, and combinatorial hashing matched against a
-        SQLite fingerprint database. 97.8% identification on 138 noisy clips against an
-        8,000-song database, ~260&nbsp;ms per query.</p>
+        <span class="entry-name"><a href="https://github.com/erikandmitrievich/total_perspective_vortex">total_perspective_vortex</a></span> &middot; <span class="entry-meta">EEG motor-imagery classification</span>
+        <p class="entry-desc">"Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; the derivation sits beside the implementation, and the features are checked against mne.decoding.CSP. 0.63 mean held-out accuracy over 109 subjects and six binary task groups."</p>
       </li>
       <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/transcendence">transcendence</a></span> &middot; <span class="entry-meta">full-stack real-time web app</span>
-        <p class="entry-desc">A real-time multiplayer Pong platform — microservice
+        <p class="entry-desc">A real-time multiplayer Pong platform; microservice
         backend (Fastify/SQLite), TypeScript frontend, remote multiplayer, and a
         single-player AI opponent with constrained perception. Team project, deployed
         via Docker.</p>
       </li>
       <li>
+        <span class="entry-name"><a href="https://github.com/erikandmitrievich/AudioPrint">AudioPrint</a></span> &middot; <span class="entry-meta">audio fingerprinting in Julia</span>
+        <p class="entry-desc">A Shazam-style audio identification engine; spectrogram
+        analysis, spectral peak extraction, and combinatorial hashing matched against a
+        SQLite fingerprint database. 97.8% identification on 138 noisy clips against an
+        8,000-song database, ~260&nbsp;ms per query.</p>
+      </li>
+      <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/webserv">webserv</a></span> &middot; <span class="entry-meta">HTTP/1.1 server in C++</span>
-        <p class="entry-desc">A non-blocking HTTP server from scratch in C++98 —
+        <p class="entry-desc">A non-blocking HTTP server from scratch in C++98;
         GET/POST/DELETE, CGI execution, file uploads, and NGINX-style config parsing,
         built on a single epoll event loop. Incremental state-machine request parser;
         cookie-based sessions. Team project.</p>
       </li>
       <li>
-        <span class="entry-name"><a href="https://github.com/erikandmitrievich/DCT">DCT</a></span> &middot; <span class="entry-meta">JPEG encoder in Julia</span>
-        <p class="entry-desc">The JPEG compression pipeline implemented from the raw
-        mathematics — manual 1D DCT summation extended to a separable 2D transform,
-        block processing, quantization, and inverse reconstruction. Self-directed, to
-        internalize the DCT covered in Linear Algebra.</p>
-      </li>
-      <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/ft_linear_regression_julia">ft_linear_regression</a></span> &middot; <span class="entry-meta">linear regression in Julia</span>
-        <p class="entry-desc">Univariate linear regression from scratch — gradient
+        <p class="entry-desc">Univariate linear regression from scratch; gradient
         descent, feature normalization, and model evaluation, with a Makefile-driven
         train/predict/evaluate pipeline.</p>
       </li>
@@ -308,12 +299,12 @@
 
   <section>
     <h2>skills</h2>
-    <p>Languages — Python, C/C++, Julia, JavaScript, SQL.<br>
-       Tools — Docker, Git, Emacs.</p>
+    <p>Languages: Python, C/C++, Julia, JavaScript, SQL.<br>
+       Tools: Docker, Git, Emacs, LaTeX.</p>
   </section>
 
   <footer>
-    Last updated May 2026
+    Last updated September 2026
   </footer>
 
 </main>
