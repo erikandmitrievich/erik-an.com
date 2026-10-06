@@ -2,7 +2,7 @@
 #+author: Erik An
 #+email: obluda2173@gmail.com
 #+date: <2026-10-06>
-#+lastmod: <2026-10-06 15:50>
+#+lastmod: <2026-10-06 16:52>
 #+options: toc:nil num:nil tags:nil
 #+startup: overview inlineimages
 
@@ -29,7 +29,7 @@
 - [[file:cv.html][CV]]
 - [[mailto:erikandmitrievich@gmail.com][Email]]
 - [[https://github.com/erikandmitrievich][GitHub]]
-- [[https://www.linkedin.com/in/erik-an/][LinkedIn]]
+- [[https://www.linkedin.com/in/erikandmitrievich/][LinkedIn]]
 
 * bio :ignore:
 

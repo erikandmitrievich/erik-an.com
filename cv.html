@@ -67,9 +67,12 @@
     padding: 5rem 1.75rem 4rem;
   }
 
-  /* Home link set in the contact line's mono, without an arrow: U+2190 is
-     outside the Google Fonts latin subset and would fall back to a system font. */
+  /* Home link left, PDF link right, in the contact line's mono, without an
+     arrow: U+2190 is outside the Google Fonts latin subset and would fall
+     back to a system font. */
   .nav {
+    display: flex;
+    justify-content: space-between;
     font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
     font-size: 0.82rem;
     margin: 0 0 1.75rem;
@@ -110,8 +113,8 @@
     color: inherit;
   }
 
-  /* The contact line reads "Email" on screen; print swaps in the address,
-     since a printed CV with no reachable address is a broken document. */
+  /* The contact line reads labels on screen; print swaps in the addresses
+     and adds the site, since on paper a label reaches nothing. */
   .on-paper {
     display: none;
   }
@@ -194,27 +197,31 @@
     color: var(--text-muted);
   }
 
-  /* Print: force light, drop screen-only chrome, tighten for paper.
+  /* Print, and the PDF built from it: black on white, one A4 page.
      Placed last so it overrides the screen palette when printing. */
   @media print {
     :root {
+      color-scheme: light;
       --bg: #fff;
       --text: #000;
-      --text-muted: #3a3a3a;
-      --rule: #cccccc;
+      --text-muted: #000;
+      --rule: #000;
     }
-    @page { margin: 1.8cm; }
-    html, body { font-size: 10.5pt; line-height: 1.45; }
+    @page { size: A4; margin: 1.5cm; }
+    html, body { font-size: 10pt; line-height: 1.4; }
     main { max-width: none; margin: 0; padding: 0; }
-    .nav, .pdf-link { display: none; }
+    .nav { display: none; }
     .on-screen { display: none; }
     .on-paper { display: inline; }
-    header { margin-bottom: 1.5rem; padding-bottom: 1rem; }
-    section { margin-bottom: 1.3rem; }
-    .entries li { margin-bottom: 0.9rem; }
-    h1 { font-size: 19pt; }
+    header { margin-bottom: 0.9rem; padding-bottom: 0.7rem; }
+    h1 { font-size: 18pt; }
+    .contact { margin-top: 0.5rem; line-height: 1.6; font-size: 0.76rem; }
+    section { margin-bottom: 0.8rem; }
+    h2 { margin-bottom: 0.4rem; }
+    .entries li { margin-bottom: 0.5rem; }
+    .entry-desc { line-height: 1.4; }
     a { color: var(--text); text-decoration: none; }
-    footer { margin-top: 2rem; }
+    footer { margin-top: 1rem; padding-top: 0.5rem; }
   }
 </style>
 </head>
@@ -222,15 +229,16 @@
 
 <main>
 
-  <p class="nav"><a href="index.html">erik-an.com</a></p>
+  <p class="nav"><a href="index.html">erik-an.com</a><a href="erik-an-cv.pdf">pdf</a></p>
 
   <header>
     <h1>Erik An</h1>
     <p class="subtitle">Mathematics and Data Science, University of Vienna</p>
     <p class="contact">
       <a href="mailto:erikandmitrievich@gmail.com"><span class="on-screen">Email</span><span class="on-paper">erikandmitrievich@gmail.com</span></a> &middot;
-      <a href="https://github.com/erikandmitrievich">GitHub</a> &middot;
-      <a href="https://www.linkedin.com/in/erik-an/">LinkedIn</a>
+      <a href="https://github.com/erikandmitrievich"><span class="on-screen">GitHub</span><span class="on-paper">github.com/erikandmitrievich</span></a> &middot;
+      <a href="https://www.linkedin.com/in/erikandmitrievich/"><span class="on-screen">LinkedIn</span><span class="on-paper">linkedin.com/in/erikandmitrievich</span></a><span class="on-paper"> &middot;
+      <a href="https://erik-an.com/">erik-an.com</a></span>
     </p>
   </header>
 
