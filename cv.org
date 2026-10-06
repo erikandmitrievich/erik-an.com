@@ -2,7 +2,7 @@
 #+author: Erik An
 #+email: obluda2173@gmail.com
 #+date: <2026-10-06>
-#+lastmod: <2026-10-06 13:40>
+#+lastmod: <2026-10-06 15:35>
 #+options: toc:nil num:nil tags:nil
 #+startup: overview inlineimages
 
@@ -62,7 +62,7 @@ A-Levels in Mathematics, Physics, and History, completed at Xabia International 
 :META: executable knowledge base
 :END:
 
-Study repository for my BSc. Emacs and Org-mode throughout, Python and Julia for tooling and coursework; lecture notes, problem sets and exam preparation in LaTeX. The directory layout is a written spec with a validator, run as a pre-commit hook; sources and generated products are strictly separated. LLMs through the API handle extraction and aggregation at volume, never the mathematics.
+Study repository for my BSc, kept in plain text and run as a software project: Org-mode, LaTeX, Python and Julia, with the directory layout specified in writing and enforced by a pre-commit validator.
 
 ** total_perspective_vortex
 :PROPERTIES:
@@ -70,7 +70,7 @@ Study repository for my BSc. Emacs and Org-mode throughout, Python and Julia for
 :META: EEG motor-imagery classification
 :END:
 
-Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy over 109 subjects and six binary task groups. The derivation sits beside the implementation, and the filters it produces are checked against mne.decoding.CSP.
+Common Spatial Patterns implemented from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy across 109 subjects of PhysioNet's EEGMMIDB, with filters checked against mne.decoding.CSP.
 
 ** audio_print
 :PROPERTIES:
@@ -78,23 +78,23 @@ Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns 
 :META: audio fingerprinting in Julia
 :END:
 
-A Shazam-style audio identification engine: spectrogram analysis, spectral peak extraction, and combinatorial hashing matched against a SQLite fingerprint database. 97.8% identification on 138 noisy clips against an 8,000-song database, ~260 ms per query.
+Shazam-style matching through spectral peaks and combinatorial hashing over a SQLite database; identifies 97.8% of 138 noisy clips against 8,000 songs at ~260 ms per query.
 
 ** transcendence
 :PROPERTIES:
 :URL: https://github.com/erikandmitrievich/transcendence
-:META: browser game platform, team of three
+:META: full-stack web app, team of three
 :END:
 
-Browser Pong platform: local play, tournaments, and an AI opponent allowed one look at the board per second, so it predicts the ball's arrival rather than tracking it. TypeScript throughout, with Fastify microservices over SQLite behind a hand-written SPA, no frontend framework, deployed with Docker. Final project of the 42 Common Core.
+Browser Pong platform with accounts, 2FA, tournaments and three microservices; my part was the game engine and AI opponent, most of the TypeScript frontend (no framework), and half of the match service.
 
 ** webserv
 :PROPERTIES:
 :URL: https://github.com/erikandmitrievich/webserv
-:META: HTTP/1.1 server in C++
+:META: HTTP/1.1 server in C++, team of three
 :END:
 
-A non-blocking HTTP server from scratch in C++98; GET/POST/DELETE, CGI execution, file uploads, and NGINX-style config parsing, built on a single epoll event loop. Incremental state-machine request parser; cookie-based sessions. Team project.
+Non-blocking C++98 server on a single epoll event loop, with an incremental request parser, CGI, file uploads and NGINX-style configuration.
 
 ** ft_linear_regression
 :PROPERTIES:
@@ -102,7 +102,7 @@ A non-blocking HTTP server from scratch in C++98; GET/POST/DELETE, CGI execution
 :META: linear regression in Julia
 :END:
 
-Univariate linear regression from scratch; gradient descent, feature normalization, and model evaluation, with a Makefile-driven train/predict/evaluate pipeline.
+Univariate model from scratch, trained by gradient descent with feature normalization; Makefile-driven train, predict and evaluate pipeline.
 
 * skills
 

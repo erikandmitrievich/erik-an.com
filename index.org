@@ -2,15 +2,25 @@
 #+author: Erik An
 #+email: obluda2173@gmail.com
 #+date: <2026-10-06>
-#+lastmod: <2026-10-06 13:40>
+#+lastmod: <2026-10-06 15:24>
 #+options: toc:nil num:nil tags:nil
 #+startup: overview inlineimages
 
 * TODO
 
-- [ ] I do not really like the sequence of the "elsewhere", it is not really structured (neither alphabetically, nor by length), takes a lot vertical space, perhaps can be set horizontally.
+- [X] I do not really like the sequence of the "elsewhere", it is not really structured (neither alphabetically, nor by length), takes a lot vertical space, perhaps can be set horizontally.
 
-- [ ] The project descriptions are written accurate, minimally, but at the same time feel perhaps too right. I do not feel they were written by me. They might give off the "llm" generated slop, unmotivating to read it. Perhaps I am overthinking.
+- [X] The project descriptions are written accurate, minimally, but at the same time feel perhaps too right. I do not feel they were written by me. They might give off the "llm" generated slop, unmotivating to read it. Perhaps I am overthinking.
+
+  - Rewrote myself.
+
+- [X] Is there a reason behind the "META browser game platform ..." and not "full stack application, ..."?
+
+  - Rewritten, put emphasis on full stack application.
+
+- [X] Why "EEG motor-imagery classification" and not "EEG motor-imagery classificator"? [dropped]
+
+- [X] I think the "local play, tournaments, and an AI opponent allowed one look at the board per second, so it predicts the ball's arrival rather than tracking it." is text about nothing. It is a very little part of the whole project, while the biggest part was a developing full stack application.
 
 * contact :ignore:
 
@@ -21,7 +31,7 @@
 
 * bio :ignore:
 
-Software engineering background; moving through mathematics toward computational neuroscience and brain-computer interfaces.
+Software engineering background, moving through mathematics toward computational neuroscience and brain-computer interfaces.
 
 * ongoing
 
@@ -31,7 +41,7 @@ Software engineering background; moving through mathematics toward computational
 :META: executable knowledge base
 :END:
 
-Study repository for my BSc. Emacs and Org-mode throughout, Python and Julia for tooling and coursework; lecture notes, problem sets and exam preparation in LaTeX. The directory layout is a written spec with a validator, run as a pre-commit hook; sources and generated products are strictly separated. LLMs through the API handle extraction and aggregation at volume, never the mathematics.
+My entire bachelor's degree done in plain text and run as software project. Emacs and org-mode throughout, python and julia for tooling and coursework. Lecture notes, problem sets and exam preparation in latex. Math notation standardized. The directory layout is a written spec with a validator, run as pre-commit hook. Sources and generated products are separated. LLMs through API handle extraction and aggregation at volume, not mathematics.
 
 * selected work
 
@@ -41,7 +51,7 @@ Study repository for my BSc. Emacs and Org-mode throughout, Python and Julia for
 :META: EEG motor-imagery classification
 :END:
 
-Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy over 109 subjects and six binary task groups. The derivation sits beside the implementation, and the filters it produces are checked against mne.decoding.CSP.
+Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy over 109 subjects and 6 binary task groups. All derivation (CSP + architecture) sit beside the implementation in docs/; CSP is checked against mne.decoding.CSP.
 
 ** audio_print
 :PROPERTIES:
@@ -54,7 +64,7 @@ A Shazam-style audio identification engine: spectrogram analysis, spectral peak 
 ** transcendence
 :PROPERTIES:
 :URL: https://github.com/erikandmitrievich/transcendence
-:META: browser game platform, team of three
+:META: full-stack web app, team of three
 :END:
 
-Browser Pong platform: local play, tournaments, and an AI opponent allowed one look at the board per second, so it predicts the ball's arrival rather than tracking it. TypeScript throughout, with Fastify microservices over SQLite behind a hand-written SPA, no frontend framework, deployed with Docker. Final project of the 42 Common Core.
+Browser Pong with: accounts, 2FA, tournaments system, three microservices behind a WAF, TLS and secrets issued by Vault. My part was game (with AI opponent that sees the board once per second and predicts where the ball lands), most of the frontend and half of the match service. Canvas engine from scratch, SPA hand-written in TS, no frontend framework. Final project of 42 Common Core.
