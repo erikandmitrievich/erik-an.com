@@ -2,7 +2,7 @@
 #+author: Erik An
 #+email: obluda2173@gmail.com
 #+date: <2026-10-06>
-#+lastmod: <2026-10-06 16:02>
+#+lastmod: <2026-10-06 16:19>
 #+options: toc:nil num:nil tags:nil
 #+startup: overview inlineimages
 
@@ -18,7 +18,7 @@
 
 - [ ] Add the pdf version of the CV that can be downloaded from the html page.
 
-- [ ] Add the GBCIC2026 attendance.
+- [X] Add the GBCIC2026 attendance.
 
 * contact :ignore:
 
@@ -53,7 +53,7 @@ Data science specialization.
 
 Software engineering. Completed in 10 months.
 
-** British-curriculum schools, Spain and UK
+** British curriculum schools, Spain and UK
 :PROPERTIES:
 :META: 2019–2024
 :END:
@@ -109,6 +109,13 @@ Non-blocking C++98 server on a single epoll event loop, with an incremental requ
 :END:
 
 Univariate model from scratch, trained by gradient descent with feature normalization; Makefile-driven train, predict and evaluate pipeline.
+
+* conferences
+
+** 10th Graz Brain-Computer Interface Conference
+:PROPERTIES:
+:META: attendee, September 2026
+:END:
 
 * skills
 
