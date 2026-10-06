@@ -2,7 +2,7 @@
 #+author: Erik An
 #+email: obluda2173@gmail.com
 #+date: <2026-10-06>
-#+lastmod: <2026-10-06 15:35>
+#+lastmod: <2026-10-06 15:43>
 #+options: toc:nil num:nil tags:nil
 #+startup: overview inlineimages
 
@@ -70,7 +70,7 @@ Study repository for my BSc, kept in plain text and run as a software project: O
 :META: EEG motor-imagery classification
 :END:
 
-Common Spatial Patterns implemented from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy across 109 subjects of PhysioNet's EEGMMIDB, with filters checked against mne.decoding.CSP.
+Common Spatial Patterns implemented from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy (6 binary task groups) across 109 subjects of PhysioNet's EEGMMIDB, with filters checked against mne.decoding.CSP.
 
 ** audio_print
 :PROPERTIES:

@@ -2,7 +2,7 @@
 #+author: Erik An
 #+email: obluda2173@gmail.com
 #+date: <2026-10-06>
-#+lastmod: <2026-10-06 15:24>
+#+lastmod: <2026-10-06 15:46>
 #+options: toc:nil num:nil tags:nil
 #+startup: overview inlineimages
 
@@ -41,7 +41,7 @@ Software engineering background, moving through mathematics toward computational
 :META: executable knowledge base
 :END:
 
-My entire bachelor's degree done in plain text and run as software project. Emacs and org-mode throughout, python and julia for tooling and coursework. Lecture notes, problem sets and exam preparation in latex. Math notation standardized. The directory layout is a written spec with a validator, run as pre-commit hook. Sources and generated products are separated. LLMs through API handle extraction and aggregation at volume, not mathematics.
+My entire bachelor's degree done in plain text and run as a software project. Emacs and org-mode throughout, python and julia for tooling and coursework. Lecture notes, problem sets and exam preparation in latex. Math notation standardized. The directory layout is a written spec with a validator, run as a pre-commit hook. Sources and generated products are separated. LLMs through the API handle extraction and aggregation at volume, not mathematics.
 
 * selected work
 
@@ -51,7 +51,7 @@ My entire bachelor's degree done in plain text and run as software project. Emac
 :META: EEG motor-imagery classification
 :END:
 
-Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy over 109 subjects and 6 binary task groups. All derivation (CSP + architecture) sit beside the implementation in docs/; CSP is checked against mne.decoding.CSP.
+Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy over 109 subjects and 6 binary task groups. All derivations (CSP + architecture) sit beside the implementation in docs/; CSP is checked against mne.decoding.CSP.
 
 ** audio_print
 :PROPERTIES:
@@ -67,4 +67,4 @@ A Shazam-style audio identification engine: spectrogram analysis, spectral peak 
 :META: full-stack web app, team of three
 :END:
 
-Browser Pong with: accounts, 2FA, tournaments system, three microservices behind a WAF, TLS and secrets issued by Vault. My part was game (with AI opponent that sees the board once per second and predicts where the ball lands), most of the frontend and half of the match service. Canvas engine from scratch, SPA hand-written in TS, no frontend framework. Final project of 42 Common Core.
+Browser Pong with accounts, 2FA, tournament system, three microservices behind a WAF, TLS and secrets issued by Vault. My part was the game (with an AI opponent that sees the board once per second and predicts where the ball lands), most of the frontend and half of the match service. Canvas engine from scratch, SPA hand-written in TS, no frontend framework. Final project of the 42 Common Core.
