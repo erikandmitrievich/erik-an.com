@@ -194,7 +194,7 @@
   </header>
 
   <section class="bio">
-    <p>Software engineering background; moving through mathematics toward computational neuroscience and brain-computer interfaces.</p>
+    <p>Software engineering background, moving through mathematics toward computational neuroscience and brain-computer interfaces.</p>
   </section>
 
   <section class="entries">
@@ -202,7 +202,7 @@
     <ul>
       <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/mfds">mfds</a></span> &middot; <span class="entry-meta">executable knowledge base</span>
-        <p class="entry-desc">Study repository for my BSc. Emacs and Org-mode throughout, Python and Julia for tooling and coursework; lecture notes, problem sets and exam preparation in LaTeX. The directory layout is a written spec with a validator, run as a pre-commit hook; sources and generated products are strictly separated. LLMs through the API handle extraction and aggregation at volume, never the mathematics.</p>
+        <p class="entry-desc">My entire bachelor's degree done in plain text and run as a software project. Emacs and org-mode throughout, python and julia for tooling and coursework. Lecture notes, problem sets and exam preparation in latex. Math notation standardized. The directory layout is a written spec with a validator, run as a pre-commit hook. Sources and generated products are separated. LLMs through API handle extraction and aggregation at volume, not mathematics.</p>
       </li>
     </ul>
   </section>
@@ -213,7 +213,7 @@
 
       <li>
         <span class="entry-name"><a href="https://github.com/erikandmitrievich/total_perspective_vortex">total_perspective_vortex</a></span> &middot; <span class="entry-meta">EEG motor-imagery classification</span>
-        <p class="entry-desc">Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy over 109 subjects and six binary task groups. The derivation sits beside the implementation, and the filters it produces are checked against mne.decoding.CSP.</p>
+        <p class="entry-desc">Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy over 109 subjects and 6 binary task groups. All derivations (CSP + architecture) sit beside the implementation in docs/; CSP is checked against mne.decoding.CSP.</p>
       </li>
 
       <li>
@@ -222,8 +222,8 @@
       </li>
 
       <li>
-        <span class="entry-name"><a href="https://github.com/erikandmitrievich/transcendence">transcendence</a></span> &middot; <span class="entry-meta">browser game platform, team of three</span>
-        <p class="entry-desc">Browser Pong platform: local play, tournaments, and an AI opponent allowed one look at the board per second, so it predicts the ball's arrival rather than tracking it. TypeScript throughout, with Fastify microservices over SQLite behind a hand-written SPA, no frontend framework, deployed with Docker. Final project of the 42 Common Core.</p>
+        <span class="entry-name"><a href="https://github.com/erikandmitrievich/transcendence">transcendence</a></span> &middot; <span class="entry-meta">full-stack web app, team of three</span>
+        <p class="entry-desc">Browser Pong with accounts, 2FA, tournament system, three microservices behind a WAF, TLS and secrets issued by Vault. My part was the game (with an AI opponent that sees the board once per second and predicts where the ball lands), most of the frontend and half of the match service. Canvas engine from scratch, SPA hand-written in TS, no frontend framework. Final project of the 42 Common Core.</p>
       </li>
 
     </ul>
