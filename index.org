@@ -2,7 +2,7 @@
 #+author: Erik An
 #+email: obluda2173@gmail.com
 #+date: <2026-10-06>
-#+lastmod: <2026-10-06 15:46>
+#+lastmod: <2026-10-06 15:50>
 #+options: toc:nil num:nil tags:nil
 #+startup: overview inlineimages
 
@@ -21,6 +21,8 @@
 - [X] Why "EEG motor-imagery classification" and not "EEG motor-imagery classificator"? [dropped]
 
 - [X] I think the "local play, tournaments, and an AI opponent allowed one look at the board per second, so it predicts the ball's arrival rather than tracking it." is text about nothing. It is a very little part of the whole project, while the biggest part was a developing full stack application.
+
+- [ ] Write little section of "beloved tools" listing doom emacs, org mode, trydactyl. Still to think.
 
 * contact :ignore:
 

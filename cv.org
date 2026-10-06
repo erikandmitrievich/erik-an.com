@@ -2,13 +2,19 @@
 #+author: Erik An
 #+email: obluda2173@gmail.com
 #+date: <2026-10-06>
-#+lastmod: <2026-10-06 15:43>
+#+lastmod: <2026-10-06 16:02>
 #+options: toc:nil num:nil tags:nil
 #+startup: overview inlineimages
 
 * TODO
 
 - [X] I do not really like that XIC (British highschool) is being only 1 year. I've been studying in British schools 5 years in total, Abbey College (1 year) -> International School of Castellon (1 year) -> Lady Elizabeth School (2 years) -> XIC (1 year). But at the same time I would like to keep the school section minimal.
+
+- [X] "with a software-engineering background from the 42 Core Curriculum" -> "with a software-engineering background from the 42 School" - put emphasis on developing in 42 advanced + to shorten text, as in current version the last trailing "it" ends up single on next line.
+
+- [X] I do not really like this sentence: "My technical work sits between signal processing, machine learning, and computational neuroscience, with the aim of working on brain-computer interfaces.". Feels to be just "filling text". Needs to be either removed or rewritten.
+
+- [X] I also do not like the return button in the cv page (return to the home), it looks bad, especially that arrow. Needs adjustments.
 
 - [ ] Add the pdf version of the CV that can be downloaded from the html page.
 
@@ -22,7 +28,7 @@
 
 * profile
 
-Mathematics and data science student at the University of Vienna, with a software-engineering background from the 42 Core Curriculum. My technical work sits between signal processing, machine learning, and computational neuroscience, with the aim of working on brain-computer interfaces. Conventions I hold to: one canonical layout per project type, names that survive grep, math documented beside the code that implements it.
+Software engineering background from the 42 School; now studying mathematics, aiming at computational neuroscience and brain-computer interfaces. Conventions I hold to: one canonical layout per project type, names that survive grep, math documented beside the code that implements it.
 
 * education
 

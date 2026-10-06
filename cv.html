@@ -67,8 +67,11 @@
     padding: 5rem 1.75rem 4rem;
   }
 
+  /* Home link set in the contact line's mono, without an arrow: U+2190 is
+     outside the Google Fonts latin subset and would fall back to a system font. */
   .nav {
-    font-size: 0.85rem;
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    font-size: 0.82rem;
     margin: 0 0 1.75rem;
   }
 
@@ -219,7 +222,7 @@
 
 <main>
 
-  <p class="nav"><a href="index.html">&larr; erik-an.com</a></p>
+  <p class="nav"><a href="index.html">erik-an.com</a></p>
 
   <header>
     <h1>Erik An</h1>
@@ -233,7 +236,7 @@
 
   <section>
     <h2>profile</h2>
-    <p>Mathematics and data science student at the University of Vienna, with a software-engineering background from the 42 Core Curriculum. My technical work sits between signal processing, machine learning, and computational neuroscience, with the aim of working on brain-computer interfaces. Conventions I hold to: one canonical layout per project type, names that survive grep, math documented beside the code that implements it.</p>
+    <p>Software engineering background from the 42 School; now studying mathematics, aiming at computational neuroscience and brain-computer interfaces. Conventions I hold to: one canonical layout per project type, names that survive grep, math documented beside the code that implements it.</p>
   </section>
 
   <section class="entries">
