@@ -1,0 +1,111 @@
+#+title: Cv
+#+author: Erik An
+#+email: obluda2173@gmail.com
+#+date: <2026-10-06>
+#+lastmod: <2026-10-06 13:40>
+#+options: toc:nil num:nil tags:nil
+#+startup: overview inlineimages
+
+* TODO
+
+- [X] I do not really like that XIC (British highschool) is being only 1 year. I've been studying in British schools 5 years in total, Abbey College (1 year) -> International School of Castellon (1 year) -> Lady Elizabeth School (2 years) -> XIC (1 year). But at the same time I would like to keep the school section minimal.
+
+- [ ] Add the pdf version of the CV that can be downloaded from the html page.
+
+- [ ] Add the GBCIC2026 attendance.
+
+* contact :ignore:
+
+- [[mailto:erikandmitrievich@gmail.com][Email]]
+- [[https://github.com/erikandmitrievich][GitHub]]
+- [[https://www.linkedin.com/in/erik-an/][LinkedIn]]
+
+* profile
+
+Mathematics and data science student at the University of Vienna, with a software-engineering background from the 42 Core Curriculum. My technical work sits between signal processing, machine learning, and computational neuroscience, with the aim of working on brain-computer interfaces. Conventions I hold to: one canonical layout per project type, names that survive grep, math documented beside the code that implements it.
+
+* education
+
+** University of Vienna
+:PROPERTIES:
+:META: 2025–present
+:END:
+
+BSc Mathematical Foundations of Data Science.
+
+** 42 Vienna, Advanced
+:PROPERTIES:
+:META: 2025–present
+:END:
+
+Data science specialization.
+
+** 42 Wolfsburg, Core Curriculum
+:PROPERTIES:
+:META: 2024–2025
+:END:
+
+Software engineering. Completed in 10 months.
+
+** British-curriculum schools, Spain and UK
+:PROPERTIES:
+:META: 2019–2024
+:END:
+
+A-Levels in Mathematics, Physics, and History, completed at Xabia International College.
+
+* projects
+
+** mfds
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/mfds
+:META: executable knowledge base
+:END:
+
+Study repository for my BSc. Emacs and Org-mode throughout, Python and Julia for tooling and coursework; lecture notes, problem sets and exam preparation in LaTeX. The directory layout is a written spec with a validator, run as a pre-commit hook; sources and generated products are strictly separated. LLMs through the API handle extraction and aggregation at volume, never the mathematics.
+
+** total_perspective_vortex
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/total_perspective_vortex
+:META: EEG motor-imagery classification
+:END:
+
+Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy over 109 subjects and six binary task groups. The derivation sits beside the implementation, and the filters it produces are checked against mne.decoding.CSP.
+
+** audio_print
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/audio_print
+:META: audio fingerprinting in Julia
+:END:
+
+A Shazam-style audio identification engine: spectrogram analysis, spectral peak extraction, and combinatorial hashing matched against a SQLite fingerprint database. 97.8% identification on 138 noisy clips against an 8,000-song database, ~260 ms per query.
+
+** transcendence
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/transcendence
+:META: browser game platform, team of three
+:END:
+
+Browser Pong platform: local play, tournaments, and an AI opponent allowed one look at the board per second, so it predicts the ball's arrival rather than tracking it. TypeScript throughout, with Fastify microservices over SQLite behind a hand-written SPA, no frontend framework, deployed with Docker. Final project of the 42 Common Core.
+
+** webserv
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/webserv
+:META: HTTP/1.1 server in C++
+:END:
+
+A non-blocking HTTP server from scratch in C++98; GET/POST/DELETE, CGI execution, file uploads, and NGINX-style config parsing, built on a single epoll event loop. Incremental state-machine request parser; cookie-based sessions. Team project.
+
+** ft_linear_regression
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/ft_linear_regression_julia
+:META: linear regression in Julia
+:END:
+
+Univariate linear regression from scratch; gradient descent, feature normalization, and model evaluation, with a Makefile-driven train/predict/evaluate pipeline.
+
+* skills
+
+- Languages :: Python, C/C++, Julia, TypeScript, JavaScript, SQL.
+- Libraries :: NumPy, scikit-learn, MNE.
+- Tools :: Docker, Git, Emacs, LaTeX.

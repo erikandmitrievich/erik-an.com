@@ -1,0 +1,60 @@
+#+title: Index
+#+author: Erik An
+#+email: obluda2173@gmail.com
+#+date: <2026-10-06>
+#+lastmod: <2026-10-06 13:40>
+#+options: toc:nil num:nil tags:nil
+#+startup: overview inlineimages
+
+* TODO
+
+- [ ] I do not really like the sequence of the "elsewhere", it is not really structured (neither alphabetically, nor by length), takes a lot vertical space, perhaps can be set horizontally.
+
+- [ ] The project descriptions are written accurate, minimally, but at the same time feel perhaps too right. I do not feel they were written by me. They might give off the "llm" generated slop, unmotivating to read it. Perhaps I am overthinking.
+
+* contact :ignore:
+
+- [[file:cv.html][CV]]
+- [[mailto:erikandmitrievich@gmail.com][Email]]
+- [[https://github.com/erikandmitrievich][GitHub]]
+- [[https://www.linkedin.com/in/erik-an/][LinkedIn]]
+
+* bio :ignore:
+
+Software engineering background; moving through mathematics toward computational neuroscience and brain-computer interfaces.
+
+* ongoing
+
+** mfds
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/mfds
+:META: executable knowledge base
+:END:
+
+Study repository for my BSc. Emacs and Org-mode throughout, Python and Julia for tooling and coursework; lecture notes, problem sets and exam preparation in LaTeX. The directory layout is a written spec with a validator, run as a pre-commit hook; sources and generated products are strictly separated. LLMs through the API handle extraction and aggregation at volume, never the mathematics.
+
+* selected work
+
+** total_perspective_vortex
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/total_perspective_vortex
+:META: EEG motor-imagery classification
+:END:
+
+Motor-imagery classification over PhysioNet's EEGMMIDB. Common Spatial Patterns written from scratch as a scikit-learn transformer, feeding LDA; 0.63 mean held-out accuracy over 109 subjects and six binary task groups. The derivation sits beside the implementation, and the filters it produces are checked against mne.decoding.CSP.
+
+** audio_print
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/audio_print
+:META: audio fingerprinting in Julia
+:END:
+
+A Shazam-style audio identification engine: spectrogram analysis, spectral peak extraction, and combinatorial hashing matched against a SQLite fingerprint database. 97.8% identification on 138 noisy clips against an 8,000-song database, ~260 ms per query.
+
+** transcendence
+:PROPERTIES:
+:URL: https://github.com/erikandmitrievich/transcendence
+:META: browser game platform, team of three
+:END:
+
+Browser Pong platform: local play, tournaments, and an AI opponent allowed one look at the board per second, so it predicts the ball's arrival rather than tracking it. TypeScript throughout, with Fastify microservices over SQLite behind a hand-written SPA, no frontend framework, deployed with Docker. Final project of the 42 Common Core.
